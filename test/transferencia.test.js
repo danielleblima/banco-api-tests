@@ -2,7 +2,7 @@ const request = require('supertest');
 const { expect } = require('chai');
 require('dotenv').config()
 const { obterToken } = require('../helpers/autenticacao')
-const postTransferencias = require('../fixtures/postTransferencias.js')
+const postTransferencias = require('../fixtures/postTransferencias.json')
 
 describe('Transferencias', () => {
     describe('POST /transferencias', () => {
